@@ -6,14 +6,73 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Login</title>
+        <title>Registrati!</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="F.serra">
-        <meta name="keyword" content="HTML, Esercizio, fpw">
+        <meta name="keywords" content="HTML, Esercizio, fpw">
         <meta name="description" content="Esercizio fpw, pagina registrazione">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <div><h1>Registrazione!</h1></div>
+            <div id="logo">
+               <img title="Main Image" alt="Penna che scrive su un foglio" src="img/homepage.jpg">
+            </div>
+        </header>
+        <nav>
+            <h2 class="importante">Lista pagine</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="articoli.html">Articoli</a></li>
+                <li><a href="https://google.com">Ti sei perso?</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form action="index.html" method="post">
+                <label class="label" for="nameID">Nome: </label>
+                <input type="text" name="nametext" id="nameID" value="Nome Utente"/>
+                <br/>
+                <label class="label" for="userID">Forum ID: </label>
+                <input type="text" name="usertext" id="userID" value="Nome Forum"/>
+                <br/>
+                <label class="label" for="passwordID">Password: </label>
+                <input type="password" name="passwordtext" id="passwordID" value="123456"/>
+                <br/>
+                <label class="label" for="writer">Scrittore: </label>
+                <input type="radio" name="statusradio" id="writerID"/>
+                <br/>
+                <label class="label" for="author">Autore: </label>
+                <input type="radio" name="statusradio" id="authorID"/>
+                <br/>
+                <p class="label">Scegli colore: </p>
+                <br/>
+                <select size="5" multiple="">
+                    <option value="red">Rosso</option>
+                    <option value="green">Verde</option>
+                    <option value="blue">Blu</option>
+                    <option value="yellow">Giallo</option>
+                    <option value="purple">Viola</option>
+                </select>
+                <br/>
+                <input type="submit" value="Invia"/>
+            </form>
+            
+            <div id="content">
+                <div>
+                    <h2>Prova_interna</h2>    
+                </div>
+                
+                <h2>Prova1</h2>
+                <h2>Prova2</h2>
+                <h2>Prova3</h2>
+                <h2>Prova4</h2>
+                <h2>Prova5</h2>
+            </div>
+            
+        </main>
+        <footer>
+            <p>Developed by Fabio Serra</p>
+        </footer>
     </body>
 </html>
