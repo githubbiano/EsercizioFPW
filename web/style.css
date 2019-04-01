@@ -44,6 +44,7 @@ a[href="index.html"]{
     border-color: black;
     box-sizing: border-box;
     border-width: 2px;
+    /*border-style: solid;*/
 }
 body {
    font-family: "Open Sans", Arial, sans-serif;
@@ -67,8 +68,31 @@ ol{
 #logo, img[title="Main Image"] {
     height: 150px;
 }
+#logo{
+    position: relative;
+}
 #logotitle{
     display: inline;
+    position: absolute;
+}
+nav > ul > li{
+    list-style: none;
+    border-style: solid;
+    float: right;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    padding: 20px;
+    border-radius: 20px;
+}
+nav, ul{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+nav > ul{
     position: relative;
-    top: -85%;
+}
+nav{
+    float:left;
+    width: 100%;
 }
