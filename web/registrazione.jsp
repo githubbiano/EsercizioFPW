@@ -1,9 +1,11 @@
+<%-- 
+    Document   : registrazione
+    Created on : 15-apr-2019, 9.01.48
+    Author     : Studente
+--%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>Registrati!</title>
@@ -15,12 +17,7 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
-        <header>
-            <div id="logo">
-               <img title="Main Image" alt="Penna che scrive su un foglio" src="img/homepage.jpg">
-               <h1 id="logotitle">Registrazione!</h1>
-            </div>
-        </header>
+        <jsp:include page="header.jsp"/>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -39,7 +36,12 @@ and open the template in the editor.
             </div>
         </aside>
         <main>
-            <form action="index.html" method="post">
+            <form action="registrazione" method="post">
+                <c:if test="${param[\"nametext\"] != null}">
+                
+                    <p>Lo username inserito è ${param["nametext"]}</p>
+                
+                </c:if>
                 <label class="label" for="nameID">Nome: </label>
                 <input type="text" name="nametext" id="nameID" value="Nome Utente"/>
                 <br/>
